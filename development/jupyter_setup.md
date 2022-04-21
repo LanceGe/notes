@@ -35,6 +35,8 @@ python -m ipykernel install --user --name ${ENV_NAME}
 
 ### R
 
+(The following is copied from https://github.com/IRkernel/IRkernel/blob/master/README.md. )
+
 ```R
 install.packages('IRkernel')
 IRkernel::installspec()  # to register the kernel in the current R installation
