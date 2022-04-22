@@ -1,7 +1,5 @@
 # Jupyter Setup
 
-Yifan Ge
-
 ## Install JupyterLab
 
 ```bash
@@ -64,9 +62,27 @@ jupyter kernelspec install ${PREFIX}/share/jupyter/xcpp14 --sys-prefix
 jupyter kernelspec install ${PREFIX}/share/jupyter/xcpp17 --sys-prefix
 ```
 
+## Configuration
 
+### Create Default Profile
 
-## Cheatsheet
+(The following is copied from https://ipython.readthedocs.io/en/stable/config/intro.html. )
+
+To create the blank configuration files, run:
+
+```bash
+ipython profile create [profilename]
+```
+
+If you leave out the profile name, the files will be created for the `default` profile (see [Profiles](https://ipython.readthedocs.io/en/stable/config/intro.html#profiles)). These will typically be located in `~/.ipython/profile_default/`, and will be named `ipython_config.py`, for historical reasons you may also find files named with IPython prefix instead of Jupyter: `ipython_notebook_config.py`, etc. The settings in `ipython_config.py` apply to all IPython commands
+
+### Matplotlib Resolution
+
+```python
+c.InlineBackend.figure_formats = {'retina'}
+```
+
+## Key Bindings
 
 ### Jupyter
 
