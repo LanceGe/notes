@@ -78,8 +78,16 @@ If you leave out the profile name, the files will be created for the `default` p
 
 ### Matplotlib Resolution
 
+In  `~/.ipython/profile_default/ipython_config.py`:
+
 ```python
 c.InlineBackend.figure_formats = {'retina'}
+```
+
+In `~/.ipython/profile_default/ipython_kernel_config.py`:
+
+```python
+c.InlineBackend.rc = { 'figure.figsize': (16, 8) }
 ```
 
 ## Key Bindings
