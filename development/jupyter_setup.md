@@ -9,7 +9,7 @@ conda install "jupyterlab>=3" "ipywidgets>=7.6"
 ## Install Extensions
 
 ```bash
-conda install -c conda-forge jupyterlab-lsp python-lsp-server jupyterlab_vim jupyterlab_code_formatter jupyterlab-variableinspector black isort
+conda install -c conda-forge jupyterlab-lsp python-lsp-server jupyterlab_vim jupyterlab_code_formatter jupyterlab-variableinspector black isort ipyml
 ```
 
 Remember to
